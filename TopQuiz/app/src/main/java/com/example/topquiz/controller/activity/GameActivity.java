@@ -62,39 +62,50 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
     private QuestionBank generateQuestion() {
         Question question1 = new Question(
-                "Who is the creator of Android?",
+                "Quel est la reponse à la grande question sur la vie ?",
                 Arrays.asList(
-                        "Andy Rubin",
-                        "Steve Wozniak",
-                        "Jake Wharton",
-                        "Paul Smith"
+                        "42",
+                        "62",
+                        "48",
+                        "25"
                 ),
                 0
         );
 
         Question question2 = new Question(
-                "When did the first man land on the moon?",
+                "Dans la guerre des boutons d'Yves Robert, quelle réplique devenue célèbre est prononcée par Petit Gibus ?",
                 Arrays.asList(
-                        "1958",
-                        "1962",
-                        "1967",
-                        "1969"
+                        "La beauté est dans les yeux de celui qui regarde",
+                        "Fais de ta vie un rêve, et d'un rêve, une réalité",
+                        "Si j'aurais su, j'aurai pas venu",
+                        "Je pense donc je suis"
                 ),
-                3
+                2
         );
 
         Question question3 = new Question(
-                "What is the house number of The Simpsons?",
+                "Dans les visiteurs, quel est le cri de guerre de la famille de Montmirail ?",
                 Arrays.asList(
-                        "42",
-                        "101",
-                        "666",
-                        "742"
+                        "Place à la bannière",
+                        "Vive l'Empereur",
+                        "Montjoie-Saint Denis, que trépasse si je faiblis",
+                        "Moult me tarde"
+                ),
+                2
+        );
+
+        Question question4 = new Question(
+                "Dans Harry Potter, Poudlard compte combien de maison ?",
+                Arrays.asList(
+                        "1",
+                        "2",
+                        "3",
+                        "4"
                 ),
                 3
         );
 
-        return new QuestionBank(Arrays.asList(question1, question2, question3));
+        return new QuestionBank(Arrays.asList(question1, question2, question3, question4));
     }
 
     @Override
@@ -130,7 +141,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
             builder.setTitle("Well done!")
                     .setMessage("Your score is " + mScore)
-                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    .setPositiveButton("OK",
+                            new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
                             finish();

@@ -22,6 +22,6 @@ public class Question {
     public Question(String question, List<String> choiceList, int answerIndex) {
         mQuestion = question;
         mChoiceList = choiceList;
-        mAnswerIndex = 0;
+        mAnswerIndex = answerIndex;
     }
 }

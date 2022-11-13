@@ -14,8 +14,8 @@ import android.widget.TextView;
 import com.example.topquiz.R;
 
 public class MainActivity extends AppCompatActivity {
-    private TextView mGreetingTextView;
-    private EditText mNameEditText;
+    TextView mGreetingTextView;
+    EditText mNameEditText;
     private Button mPlayButton;
 
     @Override
