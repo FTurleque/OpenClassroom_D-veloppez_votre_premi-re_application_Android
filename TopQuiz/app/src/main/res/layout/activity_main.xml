@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:padding="8dp"
-        android:text="Welcome! What's your name ?" />
+        android:text="@string/main_txtview_greeting" />
 
     <EditText
         android:id="@+id/main_edittext_name"
@@ -22,7 +22,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Please type your name" />
+        android:autofillHints=""
+        android:hint="@string/main_edittxt_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
 
     <Button
         android:id="@+id/main_button_play"
@@ -30,6 +34,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="16dp"
-        android:text="Let's play" />
+        android:text="@string/main_btn_play" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
